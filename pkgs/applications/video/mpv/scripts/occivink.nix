@@ -69,4 +69,10 @@ in
     outputHash = "sha256-nPa8msoQqLM33HDGkdSBnekXh1Gl389Y5G28fpaCJgA=";
   };
 
+  misc = script {
+    n = "misc";
+    meta.description = "Some commands that are too simple to warrant their own script";
+    outputHash = "sha256-eDi5t7WQjz/7jIj6mG0T9dP5OYJx82v5P7H2cWuPHkI=";
+  };
+
 }
