@@ -38,6 +38,13 @@ in
 {
 
   # Usage: `pkgs.mpv.override { scripts = [ pkgs.mpvScripts.seekTo ]; }`
+
+  crop = script {
+    n = "crop";
+    meta.description = "Crop the current video in a visual manner";
+    outputHash = "sha256-/uaTCtV8Aanvnxrt8afBbO4uu2xp8Ec6DxApMb+fg2s=";
+  };
+
   seekTo = script {
     n = "seek-to";
     meta.description = "Mpv script for seeking to a specific position";
