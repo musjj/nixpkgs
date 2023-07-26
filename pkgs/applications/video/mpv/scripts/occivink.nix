@@ -45,6 +45,12 @@ in
     outputHash = "sha256-/uaTCtV8Aanvnxrt8afBbO4uu2xp8Ec6DxApMb+fg2s=";
   };
 
+  encode = script {
+    n = "encode";
+    meta.description = "Make an extract of the video currently playing using ffmpeg";
+    outputHash = "sha256-yK/DV0cpGhl4Uobl7xA1myZiECJpsShrHnsJftBqzAY=";
+  };
+
   seekTo = script {
     n = "seek-to";
     meta.description = "Mpv script for seeking to a specific position";
