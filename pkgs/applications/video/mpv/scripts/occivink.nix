@@ -63,4 +63,10 @@ in
     outputHash = "sha256-qw9lz8ofmvvh23F9aWLxiU4YofY+YflRETu+nxMhvVE=";
   };
 
+  blurEdges = script {
+    n = "blur-edges";
+    meta.description = "Fills the black bars on the side of a video with a blurred copy of its edges";
+    outputHash = "sha256-nPa8msoQqLM33HDGkdSBnekXh1Gl389Y5G28fpaCJgA=";
+  };
+
 }
