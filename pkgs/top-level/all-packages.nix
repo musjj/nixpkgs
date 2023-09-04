@@ -8046,6 +8046,8 @@ with pkgs;
 
   chewing-editor = libsForQt5.callPackage ../applications/misc/chewing-editor { };
 
+  mozc = qt6Packages.callPackage ../development/libraries/mozc { };
+
   fcitx5 = libsForQt5.callPackage ../tools/inputmethods/fcitx5 { };
 
   fcitx5-with-addons = libsForQt5.callPackage ../tools/inputmethods/fcitx5/with-addons.nix { };
