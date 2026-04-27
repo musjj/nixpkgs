@@ -865,6 +865,15 @@ runTests {
     expected = "'á'";
   };
 
+  testEscapeShellArgsPathWithContext = {
+    expr = lib.pipe ../../flake.nix [
+      strings.escapeShellArg
+      lib.getContext
+      lib.attrValues
+    ];
+    expected = [ { path = true; } ];
+  };
+
   testEscapeNixIdentifierNoQuote = {
     expr = strings.escapeNixIdentifier "foo";
     expected = "foo";

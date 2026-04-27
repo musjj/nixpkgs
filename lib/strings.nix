@@ -1200,7 +1200,7 @@ rec {
   escapeShellArg =
     arg:
     let
-      string = toString arg;
+      string = if builtins.isPath arg then "${arg}" else toString arg;
     in
     if match "[[:alnum:],._+:@%/-]+" string == null then
       "'${replaceString "'" "'\\''" string}'"
